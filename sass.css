@@ -7,12 +7,12 @@ html {
 /* line 6, sass.scss */
 body {
   margin: 0;
+  color: grey;
 }
 
-/* line 10, sass.scss */
+/* line 11, sass.scss */
 #header {
   position: relative;
-  color: grey;
   text-align: center;
   padding: 10px;
 }
@@ -66,15 +66,73 @@ body {
 #container {
   padding: 20px;
   background-color: white;
+  color: black;
 }
 
-/* line 63, sass.scss */
+/* line 64, sass.scss */
 .post-edit-link {
   float: right;
   margin-top: -38px;
 }
 
-/* line 68, sass.scss */
+/* line 69, sass.scss */
+.card, .success, .report-card {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+/* line 75, sass.scss */
+.success {
+  padding: 10px;
+  background-color: #C5E0B1;
+  color: green;
+}
+
+/* line 82, sass.scss */
+.report-card {
+  padding: 10px 15px;
+}
+/* line 86, sass.scss */
+.report-card h2 {
+  margin: 0;
+  text-align: center;
+}
+/* line 91, sass.scss */
+.report-card .report {
+  display: table;
+  margin: 15px auto 5px;
+}
+/* line 94, sass.scss */
+.report-card .report .controls {
+  display: inline-block;
+}
+/* line 97, sass.scss */
+.report-card .report label {
+  padding: 0 0 0 10px;
+}
+/* line 102, sass.scss */
+.report-card .stats {
+  text-align: center;
+}
+/* line 106, sass.scss */
+.report-card .stat {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+}
+/* line 112, sass.scss */
+.report-card .number {
+  display: block;
+  font-size: 30px;
+}
+
+/* line 118, sass.scss */
+.report-cards .submit {
+  margin-top: 20px;
+}
+
+/* line 122, sass.scss */
 .meter {
   height: 22px;
   background-color: #EFEFEF;
@@ -82,8 +140,9 @@ body {
   white-space: nowrap;
   overflow: hidden;
   border-radius: 4px;
+  clear: both;
 }
-/* line 75, sass.scss */
+/* line 130, sass.scss */
 .meter .label {
   position: absolute;
   top: 2px;
@@ -91,7 +150,7 @@ body {
   color: black;
   z-index: 10;
 }
-/* line 82, sass.scss */
+/* line 137, sass.scss */
 .meter .progress {
   background-color: #BA0000;
   height: 100%;
@@ -103,21 +162,333 @@ body {
   color: white;
 }
 
-/* line 94, sass.scss */
+/* line 149, sass.scss */
 #footer {
   padding: 20px;
-  color: grey;
 }
-/* line 97, sass.scss */
+/* line 151, sass.scss */
 #footer a {
   color: grey;
 }
 
-/* line 102, sass.scss */
+/* line 156, sass.scss */
 .SimpleTest {
   opacity: .5;
 }
-/* line 104, sass.scss */
+/* line 158, sass.scss */
 .SimpleTest:hover {
   opacity: 1;
+}
+
+/*percentage STEPS (do not touch)*/
+/* line 166, sass.scss */
+.full_percentage[data-percentage="100"] {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 172, sass.scss */
+.full_percentage[data-percentage="95"] {
+  -webkit-transform: rotate(170deg);
+  -moz-transform: rotate(170deg);
+  -o-transform: rotate(170deg);
+  transform: rotate(170deg);
+}
+
+/* line 178, sass.scss */
+.full_percentage[data-percentage="90"] {
+  -webkit-transform: rotate(155deg);
+  -moz-transform: rotate(155deg);
+  -o-transform: rotate(155deg);
+  transform: rotate(155deg);
+}
+
+/* line 184, sass.scss */
+.full_percentage[data-percentage="85"] {
+  -webkit-transform: rotate(125deg);
+  -moz-transform: rotate(125deg);
+  -o-transform: rotate(125deg);
+  transform: rotate(125deg);
+}
+
+/* line 190, sass.scss */
+.full_percentage[data-percentage="80"] {
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(110deg);
+  -o-transform: rotate(110deg);
+  transform: rotate(110deg);
+}
+
+/* line 196, sass.scss */
+.full_percentage[data-percentage="75"] {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 202, sass.scss */
+.full_percentage[data-percentage="70"] {
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+
+/* line 208, sass.scss */
+.full_percentage[data-percentage="65"] {
+  -webkit-transform: rotate(55deg);
+  -moz-transform: rotate(55deg);
+  -o-transform: rotate(55deg);
+  transform: rotate(55deg);
+}
+
+/* line 214, sass.scss */
+.full_percentage[data-percentage="60"] {
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+/* line 220, sass.scss */
+.full_percentage[data-percentage="55"] {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+/* line 226, sass.scss */
+.full_percentage[data-percentage="50"] {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* line 232, sass.scss */
+.half_percentage[data-percentage="50"] {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 238, sass.scss */
+.half_percentage[data-percentage="45"] {
+  -webkit-transform: rotate(170deg);
+  -moz-transform: rotate(170deg);
+  -o-transform: rotate(170deg);
+  transform: rotate(170deg);
+}
+
+/* line 244, sass.scss */
+.half_percentage[data-percentage="40"] {
+  -webkit-transform: rotate(155deg);
+  -moz-transform: rotate(155deg);
+  -o-transform: rotate(155deg);
+  transform: rotate(155deg);
+}
+
+/* line 250, sass.scss */
+.half_percentage[data-percentage="35"] {
+  -webkit-transform: rotate(125deg);
+  -moz-transform: rotate(125deg);
+  -o-transform: rotate(125deg);
+  transform: rotate(125deg);
+}
+
+/* line 256, sass.scss */
+.half_percentage[data-percentage="30"] {
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(110deg);
+  -o-transform: rotate(110deg);
+  transform: rotate(110deg);
+}
+
+/* line 262, sass.scss */
+.half_percentage[data-percentage="25"] {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 268, sass.scss */
+.half_percentage[data-percentage="20"] {
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+
+/* line 274, sass.scss */
+.half_percentage[data-percentage="15"] {
+  -webkit-transform: rotate(55deg);
+  -moz-transform: rotate(55deg);
+  -o-transform: rotate(55deg);
+  transform: rotate(55deg);
+}
+
+/* line 280, sass.scss */
+.half_percentage[data-percentage="10"] {
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+/* line 286, sass.scss */
+.half_percentage[data-percentage="5"] {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+/* line 292, sass.scss */
+.half_percentage[data-percentage="0"] {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/*
+ *
+ * THE SECOND EXAMPLE
+ * the second example for a max percentuage of 50% in this case
+ *
+ */
+/*COLOR and STYLES (note: you can use gradients for the class full_bar_color)*/
+/* line 306, sass.scss */
+.half_bar_color {
+  background: #3498db;
+}
+
+/*start chart pie code*/
+/* line 310, sass.scss */
+.half_pie {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/*the background white circular color*/
+/* line 322, sass.scss */
+.half_pie:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 220px;
+  height: 220px;
+  top: -10px;
+  left: -10px;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/*color white #fff to fix the rendering problem*/
+/* line 338, sass.scss */
+.half_pie:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 198px;
+  height: 198px;
+  top: 1px;
+  left: 1px;
+  -webkit-box-shadow: 0px 0px 0px 2px white, inset 0 0 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 0px 2px white, inset 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 2px white, inset 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/*the icon*/
+/* line 356, sass.scss */
+span.half_pie_icon {
+  position: absolute;
+  z-index: 5;
+  top: 25px;
+  left: 25px;
+  width: 150px;
+  height: 150px;
+  font-size: 3em;
+  line-height: 150px;
+  text-align: center;
+  color: #e0e0e0;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/*ONE*/
+/* line 377, sass.scss */
+.half_part_pie_one {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  clip: rect(0px 100px 200px 0px);
+}
+
+/*TWO*/
+/* line 389, sass.scss */
+.half_part_pie_two {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  clip: rect(0px 100px 200px 0px);
+}
+
+/*THREE*/
+/* line 402, sass.scss */
+.half_part_pie_three {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  clip: rect(0px 200px 200px 100px);
+  -webkit-animation: half_third 4s linear;
+  -moz-animation: half_third 4s linear;
+  -o-animation: half_third 4s linear;
+  animation: half_third 4s linear;
+  opacity: 0;
 }
