@@ -103,36 +103,64 @@ body {
   display: table;
   margin: 15px auto 5px;
 }
-/* line 94, sass.scss */
+/* line 95, sass.scss */
 .report-card .report .controls {
   display: inline-block;
 }
-/* line 97, sass.scss */
+/* line 99, sass.scss */
 .report-card .report label {
   padding: 0 0 0 10px;
 }
-/* line 102, sass.scss */
+/* line 104, sass.scss */
 .report-card .stats {
   text-align: center;
 }
-/* line 106, sass.scss */
+/* line 108, sass.scss */
 .report-card .stat {
   display: inline-block;
   text-align: center;
   padding: 0 20px;
 }
-/* line 112, sass.scss */
+/* line 114, sass.scss */
 .report-card .number {
   display: block;
   font-size: 30px;
 }
+@media all and (min-width: 700px) {
+  /* line 82, sass.scss */
+  .report-card {
+    overflow: hidden;
+    padding-right: 350px;
+  }
+  /* line 123, sass.scss */
+  .report-card .main {
+    float: left;
+    width: 100%;
+  }
+  /* line 127, sass.scss */
+  .report-card .main h2 {
+    text-align: left;
+  }
+  /* line 131, sass.scss */
+  .report-card .main .report {
+    margin: 15px 0;
+  }
+  /* line 136, sass.scss */
+  .report-card .stats {
+    float: right;
+    width: 320px;
+    margin-right: -350px;
+    margin-top: -7px;
+    padding: 0 15px 5px;
+  }
+}
 
-/* line 118, sass.scss */
+/* line 146, sass.scss */
 .report-cards .submit {
   margin-top: 20px;
 }
 
-/* line 122, sass.scss */
+/* line 150, sass.scss */
 .meter {
   height: 22px;
   background-color: #EFEFEF;
@@ -142,7 +170,7 @@ body {
   border-radius: 4px;
   clear: both;
 }
-/* line 130, sass.scss */
+/* line 158, sass.scss */
 .meter .label {
   position: absolute;
   top: 2px;
@@ -150,7 +178,7 @@ body {
   color: black;
   z-index: 10;
 }
-/* line 137, sass.scss */
+/* line 165, sass.scss */
 .meter .progress {
   background-color: #BA0000;
   height: 100%;
@@ -162,26 +190,26 @@ body {
   color: white;
 }
 
-/* line 149, sass.scss */
+/* line 177, sass.scss */
 #footer {
   padding: 20px;
 }
-/* line 151, sass.scss */
+/* line 179, sass.scss */
 #footer a {
   color: grey;
 }
 
-/* line 156, sass.scss */
+/* line 184, sass.scss */
 .SimpleTest {
   opacity: .5;
 }
-/* line 158, sass.scss */
+/* line 186, sass.scss */
 .SimpleTest:hover {
   opacity: 1;
 }
 
 /*percentage STEPS (do not touch)*/
-/* line 166, sass.scss */
+/* line 194, sass.scss */
 .full_percentage[data-percentage="100"] {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -189,7 +217,7 @@ body {
   transform: rotate(180deg);
 }
 
-/* line 172, sass.scss */
+/* line 200, sass.scss */
 .full_percentage[data-percentage="95"] {
   -webkit-transform: rotate(170deg);
   -moz-transform: rotate(170deg);
@@ -197,7 +225,7 @@ body {
   transform: rotate(170deg);
 }
 
-/* line 178, sass.scss */
+/* line 206, sass.scss */
 .full_percentage[data-percentage="90"] {
   -webkit-transform: rotate(155deg);
   -moz-transform: rotate(155deg);
@@ -205,7 +233,7 @@ body {
   transform: rotate(155deg);
 }
 
-/* line 184, sass.scss */
+/* line 212, sass.scss */
 .full_percentage[data-percentage="85"] {
   -webkit-transform: rotate(125deg);
   -moz-transform: rotate(125deg);
@@ -213,7 +241,7 @@ body {
   transform: rotate(125deg);
 }
 
-/* line 190, sass.scss */
+/* line 218, sass.scss */
 .full_percentage[data-percentage="80"] {
   -webkit-transform: rotate(110deg);
   -moz-transform: rotate(110deg);
@@ -221,7 +249,7 @@ body {
   transform: rotate(110deg);
 }
 
-/* line 196, sass.scss */
+/* line 224, sass.scss */
 .full_percentage[data-percentage="75"] {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -229,7 +257,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* line 202, sass.scss */
+/* line 230, sass.scss */
 .full_percentage[data-percentage="70"] {
   -webkit-transform: rotate(70deg);
   -moz-transform: rotate(70deg);
@@ -237,7 +265,7 @@ body {
   transform: rotate(70deg);
 }
 
-/* line 208, sass.scss */
+/* line 236, sass.scss */
 .full_percentage[data-percentage="65"] {
   -webkit-transform: rotate(55deg);
   -moz-transform: rotate(55deg);
@@ -245,7 +273,7 @@ body {
   transform: rotate(55deg);
 }
 
-/* line 214, sass.scss */
+/* line 242, sass.scss */
 .full_percentage[data-percentage="60"] {
   -webkit-transform: rotate(35deg);
   -moz-transform: rotate(35deg);
@@ -253,7 +281,7 @@ body {
   transform: rotate(35deg);
 }
 
-/* line 220, sass.scss */
+/* line 248, sass.scss */
 .full_percentage[data-percentage="55"] {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -261,7 +289,7 @@ body {
   transform: rotate(20deg);
 }
 
-/* line 226, sass.scss */
+/* line 254, sass.scss */
 .full_percentage[data-percentage="50"] {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -269,7 +297,7 @@ body {
   transform: rotate(0deg);
 }
 
-/* line 232, sass.scss */
+/* line 260, sass.scss */
 .half_percentage[data-percentage="50"] {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -277,7 +305,7 @@ body {
   transform: rotate(180deg);
 }
 
-/* line 238, sass.scss */
+/* line 266, sass.scss */
 .half_percentage[data-percentage="45"] {
   -webkit-transform: rotate(170deg);
   -moz-transform: rotate(170deg);
@@ -285,7 +313,7 @@ body {
   transform: rotate(170deg);
 }
 
-/* line 244, sass.scss */
+/* line 272, sass.scss */
 .half_percentage[data-percentage="40"] {
   -webkit-transform: rotate(155deg);
   -moz-transform: rotate(155deg);
@@ -293,7 +321,7 @@ body {
   transform: rotate(155deg);
 }
 
-/* line 250, sass.scss */
+/* line 278, sass.scss */
 .half_percentage[data-percentage="35"] {
   -webkit-transform: rotate(125deg);
   -moz-transform: rotate(125deg);
@@ -301,7 +329,7 @@ body {
   transform: rotate(125deg);
 }
 
-/* line 256, sass.scss */
+/* line 284, sass.scss */
 .half_percentage[data-percentage="30"] {
   -webkit-transform: rotate(110deg);
   -moz-transform: rotate(110deg);
@@ -309,7 +337,7 @@ body {
   transform: rotate(110deg);
 }
 
-/* line 262, sass.scss */
+/* line 290, sass.scss */
 .half_percentage[data-percentage="25"] {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -317,7 +345,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* line 268, sass.scss */
+/* line 296, sass.scss */
 .half_percentage[data-percentage="20"] {
   -webkit-transform: rotate(70deg);
   -moz-transform: rotate(70deg);
@@ -325,7 +353,7 @@ body {
   transform: rotate(70deg);
 }
 
-/* line 274, sass.scss */
+/* line 302, sass.scss */
 .half_percentage[data-percentage="15"] {
   -webkit-transform: rotate(55deg);
   -moz-transform: rotate(55deg);
@@ -333,7 +361,7 @@ body {
   transform: rotate(55deg);
 }
 
-/* line 280, sass.scss */
+/* line 308, sass.scss */
 .half_percentage[data-percentage="10"] {
   -webkit-transform: rotate(35deg);
   -moz-transform: rotate(35deg);
@@ -341,7 +369,7 @@ body {
   transform: rotate(35deg);
 }
 
-/* line 286, sass.scss */
+/* line 314, sass.scss */
 .half_percentage[data-percentage="5"] {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -349,7 +377,7 @@ body {
   transform: rotate(20deg);
 }
 
-/* line 292, sass.scss */
+/* line 320, sass.scss */
 .half_percentage[data-percentage="0"] {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -364,13 +392,13 @@ body {
  *
  */
 /*COLOR and STYLES (note: you can use gradients for the class full_bar_color)*/
-/* line 306, sass.scss */
+/* line 334, sass.scss */
 .half_bar_color {
   background: #3498db;
 }
 
 /*start chart pie code*/
-/* line 310, sass.scss */
+/* line 338, sass.scss */
 .half_pie {
   position: relative;
   width: 200px;
@@ -384,7 +412,7 @@ body {
 }
 
 /*the background white circular color*/
-/* line 322, sass.scss */
+/* line 350, sass.scss */
 .half_pie:before {
   content: '';
   display: block;
@@ -402,7 +430,7 @@ body {
 }
 
 /*color white #fff to fix the rendering problem*/
-/* line 338, sass.scss */
+/* line 366, sass.scss */
 .half_pie:after {
   content: '';
   display: block;
@@ -422,7 +450,7 @@ body {
 }
 
 /*the icon*/
-/* line 356, sass.scss */
+/* line 384, sass.scss */
 span.half_pie_icon {
   position: absolute;
   z-index: 5;
@@ -445,7 +473,7 @@ span.half_pie_icon {
 }
 
 /*ONE*/
-/* line 377, sass.scss */
+/* line 405, sass.scss */
 .half_part_pie_one {
   position: absolute;
   z-index: 1;
@@ -459,7 +487,7 @@ span.half_pie_icon {
 }
 
 /*TWO*/
-/* line 389, sass.scss */
+/* line 417, sass.scss */
 .half_part_pie_two {
   position: absolute;
   z-index: 2;
@@ -474,7 +502,7 @@ span.half_pie_icon {
 }
 
 /*THREE*/
-/* line 402, sass.scss */
+/* line 430, sass.scss */
 .half_part_pie_three {
   position: absolute;
   z-index: 3;

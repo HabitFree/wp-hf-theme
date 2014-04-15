@@ -91,9 +91,11 @@ body {
   .report {
     display: table;
     margin: 15px auto 5px;
+    
     .controls {
       display:inline-block;
     }
+    
     label {
       padding: 0 0 0 10px;
     }
@@ -112,6 +114,32 @@ body {
   .number {
     display:block;
     font-size:30px;
+  }
+  
+  @media all and (min-width: 700px) {
+    overflow:hidden;
+    padding-right:350px;
+    
+    .main {
+      float:left;
+      width:100%;
+      
+      h2 {
+        text-align:left;
+      }
+      
+      .report {
+        margin:15px 0;
+      }
+    }
+    
+    .stats {
+      float: right;
+      width: 320px;
+      margin-right: -350px;
+      margin-top: -7px;
+      padding: 0 15px 5px;
+    }
   }
 }
 
