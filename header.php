@@ -11,7 +11,7 @@
 	<div id="wrapper" class="hfeed">
 		<header id="header" role="banner">
 			<div class="user-buttons">
-				<?php echo do_shortcode( '[userButtons]' ); ?>
+				<?php echo do_shortcode( '[hfUserButtons]' ); ?>
 			</div>
 			<section id="branding">
 				<h2 id="site-title">

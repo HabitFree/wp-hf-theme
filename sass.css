@@ -1,166 +1,104 @@
-/* line 1, sass.scss */
 html {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-color: black;
-}
+  background-color: black; }
 
-/* line 6, sass.scss */
 body {
   margin: 0;
-  color: grey;
-}
+  color: grey; }
 
-/* line 11, sass.scss */
 #header {
   position: relative;
   text-align: center;
-  padding: 10px;
-}
-/* line 16, sass.scss */
-#header a {
-  color: grey;
-}
-/* line 20, sass.scss */
-#header a:hover {
-  color: white;
-  text-decoration: none;
-}
-/* line 26, sass.scss */
-#header .menu ul {
-  padding: 0;
-  margin: 0;
-}
-/* line 30, sass.scss */
-#header .menu li {
-  display: inline-block;
-  padding: 10px;
-}
-/* line 34, sass.scss */
-#header .menu a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+  padding: 10px; }
+  #header a {
+    color: grey; }
+  #header a:hover {
+    color: white;
+    text-decoration: none; }
+  #header .menu ul {
+    padding: 0;
+    margin: 0; }
+  #header .menu li {
+    display: inline-block;
+    padding: 10px; }
+  #header .menu a {
+    display: block;
+    width: 100%;
+    height: 100%; }
 
-/* line 42, sass.scss */
 .user-buttons {
-  padding: 10px;
-}
+  padding: 10px; }
 
-/* line 46, sass.scss */
 #site-title {
   margin: 0 auto;
-  display: table;
-}
-/* line 49, sass.scss */
-#site-title img {
-  margin-left: -10px;
-}
+  display: table; }
+  #site-title img {
+    margin-left: -10px; }
 
-/* line 54, sass.scss */
 .hide {
-  display: none;
-}
+  display: none; }
 
-/* line 58, sass.scss */
 #container {
   padding: 20px;
   background-color: white;
-  color: black;
-}
+  color: black; }
 
-/* line 64, sass.scss */
 .post-edit-link {
   float: right;
-  margin-top: -38px;
-}
+  margin-top: -38px; }
 
-/* line 69, sass.scss */
 .card, .success, .report-card {
   border: 1px solid lightgrey;
   border-radius: 4px;
-  padding: 15px;
-}
+  padding: 15px; }
 
-/* line 75, sass.scss */
 .success {
   padding: 10px;
   background-color: #C5E0B1;
-  color: green;
-}
+  color: green; }
 
-/* line 82, sass.scss */
 .report-card {
-  padding: 10px 15px;
-}
-/* line 86, sass.scss */
-.report-card h2 {
-  margin: 0;
-  text-align: center;
-}
-/* line 91, sass.scss */
-.report-card .report {
-  display: table;
-  margin: 15px auto 5px;
-}
-/* line 95, sass.scss */
-.report-card .report .controls {
-  display: inline-block;
-}
-/* line 99, sass.scss */
-.report-card .report label {
-  padding: 0 0 0 10px;
-}
-/* line 104, sass.scss */
-.report-card .stats {
-  text-align: center;
-}
-/* line 108, sass.scss */
-.report-card .stat {
-  display: inline-block;
-  text-align: center;
-  padding: 0 20px;
-}
-/* line 114, sass.scss */
-.report-card .number {
-  display: block;
-  font-size: 30px;
-}
-@media all and (min-width: 700px) {
-  /* line 82, sass.scss */
-  .report-card {
-    overflow: hidden;
-    padding-right: 350px;
-  }
-  /* line 123, sass.scss */
-  .report-card .main {
-    float: left;
-    width: 100%;
-  }
-  /* line 127, sass.scss */
-  .report-card .main h2 {
-    text-align: left;
-  }
-  /* line 131, sass.scss */
-  .report-card .main .report {
-    margin: 15px 0;
-  }
-  /* line 136, sass.scss */
+  padding: 10px 15px; }
+  .report-card h2 {
+    margin: 0;
+    text-align: center; }
+  .report-card .report {
+    display: table;
+    margin: 15px auto 5px; }
+    .report-card .report .controls {
+      display: inline-block; }
+    .report-card .report label {
+      padding: 0 0 0 10px; }
   .report-card .stats {
-    float: right;
-    width: 320px;
-    margin-right: -350px;
-    margin-top: -7px;
-    padding: 0 15px 5px;
-  }
-}
+    text-align: center; }
+  .report-card .stat {
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px; }
+  .report-card .number {
+    display: block;
+    font-size: 30px; }
+  @media all and (min-width: 700px) {
+    .report-card {
+      overflow: hidden;
+      padding-right: 350px; }
+      .report-card .main {
+        float: left;
+        width: 100%; }
+        .report-card .main h2 {
+          text-align: left; }
+        .report-card .main .report {
+          margin: 15px 0; }
+      .report-card .stats {
+        float: right;
+        width: 320px;
+        margin-right: -350px;
+        margin-top: -7px;
+        padding: 0 15px 5px; } }
 
-/* line 146, sass.scss */
 .report-cards .submit {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-/* line 150, sass.scss */
 .meter {
   height: 22px;
   background-color: #EFEFEF;
@@ -168,222 +106,168 @@ body {
   white-space: nowrap;
   overflow: hidden;
   border-radius: 4px;
-  clear: both;
-}
-/* line 158, sass.scss */
-.meter .label {
-  position: absolute;
-  top: 2px;
-  left: 5px;
-  color: black;
-  z-index: 10;
-}
-/* line 165, sass.scss */
-.meter .progress {
-  background-color: #BA0000;
-  height: 100%;
-  display: block;
-  overflow: hidden;
-  padding: 2px 5px;
-  position: absolute;
-  z-index: 50;
-  color: white;
-}
+  clear: both; }
+  .meter .label {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    color: black;
+    z-index: 10; }
+  .meter .progress {
+    background-color: #BA0000;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 2px 5px;
+    position: absolute;
+    z-index: 50;
+    color: white; }
 
-/* line 177, sass.scss */
 #footer {
-  padding: 20px;
-}
-/* line 179, sass.scss */
-#footer a {
-  color: grey;
-}
+  padding: 20px; }
+  #footer a {
+    color: grey; }
 
-/* line 184, sass.scss */
 .SimpleTest {
-  opacity: .5;
-}
-/* line 186, sass.scss */
-.SimpleTest:hover {
-  opacity: 1;
-}
+  opacity: .5; }
+  .SimpleTest:hover {
+    opacity: 1; }
+
+.send-confirmation-email {
+  display: none; }
 
 /*percentage STEPS (do not touch)*/
-/* line 194, sass.scss */
 .full_percentage[data-percentage="100"] {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+  transform: rotate(180deg); }
 
-/* line 200, sass.scss */
 .full_percentage[data-percentage="95"] {
   -webkit-transform: rotate(170deg);
   -moz-transform: rotate(170deg);
   -o-transform: rotate(170deg);
-  transform: rotate(170deg);
-}
+  transform: rotate(170deg); }
 
-/* line 206, sass.scss */
 .full_percentage[data-percentage="90"] {
   -webkit-transform: rotate(155deg);
   -moz-transform: rotate(155deg);
   -o-transform: rotate(155deg);
-  transform: rotate(155deg);
-}
+  transform: rotate(155deg); }
 
-/* line 212, sass.scss */
 .full_percentage[data-percentage="85"] {
   -webkit-transform: rotate(125deg);
   -moz-transform: rotate(125deg);
   -o-transform: rotate(125deg);
-  transform: rotate(125deg);
-}
+  transform: rotate(125deg); }
 
-/* line 218, sass.scss */
 .full_percentage[data-percentage="80"] {
   -webkit-transform: rotate(110deg);
   -moz-transform: rotate(110deg);
   -o-transform: rotate(110deg);
-  transform: rotate(110deg);
-}
+  transform: rotate(110deg); }
 
-/* line 224, sass.scss */
 .full_percentage[data-percentage="75"] {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
+  transform: rotate(90deg); }
 
-/* line 230, sass.scss */
 .full_percentage[data-percentage="70"] {
   -webkit-transform: rotate(70deg);
   -moz-transform: rotate(70deg);
   -o-transform: rotate(70deg);
-  transform: rotate(70deg);
-}
+  transform: rotate(70deg); }
 
-/* line 236, sass.scss */
 .full_percentage[data-percentage="65"] {
   -webkit-transform: rotate(55deg);
   -moz-transform: rotate(55deg);
   -o-transform: rotate(55deg);
-  transform: rotate(55deg);
-}
+  transform: rotate(55deg); }
 
-/* line 242, sass.scss */
 .full_percentage[data-percentage="60"] {
   -webkit-transform: rotate(35deg);
   -moz-transform: rotate(35deg);
   -o-transform: rotate(35deg);
-  transform: rotate(35deg);
-}
+  transform: rotate(35deg); }
 
-/* line 248, sass.scss */
 .full_percentage[data-percentage="55"] {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-}
+  transform: rotate(20deg); }
 
-/* line 254, sass.scss */
 .full_percentage[data-percentage="50"] {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
+  transform: rotate(0deg); }
 
-/* line 260, sass.scss */
 .half_percentage[data-percentage="50"] {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+  transform: rotate(180deg); }
 
-/* line 266, sass.scss */
 .half_percentage[data-percentage="45"] {
   -webkit-transform: rotate(170deg);
   -moz-transform: rotate(170deg);
   -o-transform: rotate(170deg);
-  transform: rotate(170deg);
-}
+  transform: rotate(170deg); }
 
-/* line 272, sass.scss */
 .half_percentage[data-percentage="40"] {
   -webkit-transform: rotate(155deg);
   -moz-transform: rotate(155deg);
   -o-transform: rotate(155deg);
-  transform: rotate(155deg);
-}
+  transform: rotate(155deg); }
 
-/* line 278, sass.scss */
 .half_percentage[data-percentage="35"] {
   -webkit-transform: rotate(125deg);
   -moz-transform: rotate(125deg);
   -o-transform: rotate(125deg);
-  transform: rotate(125deg);
-}
+  transform: rotate(125deg); }
 
-/* line 284, sass.scss */
 .half_percentage[data-percentage="30"] {
   -webkit-transform: rotate(110deg);
   -moz-transform: rotate(110deg);
   -o-transform: rotate(110deg);
-  transform: rotate(110deg);
-}
+  transform: rotate(110deg); }
 
-/* line 290, sass.scss */
 .half_percentage[data-percentage="25"] {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
+  transform: rotate(90deg); }
 
-/* line 296, sass.scss */
 .half_percentage[data-percentage="20"] {
   -webkit-transform: rotate(70deg);
   -moz-transform: rotate(70deg);
   -o-transform: rotate(70deg);
-  transform: rotate(70deg);
-}
+  transform: rotate(70deg); }
 
-/* line 302, sass.scss */
 .half_percentage[data-percentage="15"] {
   -webkit-transform: rotate(55deg);
   -moz-transform: rotate(55deg);
   -o-transform: rotate(55deg);
-  transform: rotate(55deg);
-}
+  transform: rotate(55deg); }
 
-/* line 308, sass.scss */
 .half_percentage[data-percentage="10"] {
   -webkit-transform: rotate(35deg);
   -moz-transform: rotate(35deg);
   -o-transform: rotate(35deg);
-  transform: rotate(35deg);
-}
+  transform: rotate(35deg); }
 
-/* line 314, sass.scss */
 .half_percentage[data-percentage="5"] {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-}
+  transform: rotate(20deg); }
 
-/* line 320, sass.scss */
 .half_percentage[data-percentage="0"] {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
+  transform: rotate(0deg); }
 
 /*
  *
@@ -392,13 +276,10 @@ body {
  *
  */
 /*COLOR and STYLES (note: you can use gradients for the class full_bar_color)*/
-/* line 334, sass.scss */
 .half_bar_color {
-  background: #3498db;
-}
+  background: #3498db; }
 
 /*start chart pie code*/
-/* line 338, sass.scss */
 .half_pie {
   position: relative;
   width: 200px;
@@ -408,11 +289,9 @@ body {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
 
 /*the background white circular color*/
-/* line 350, sass.scss */
 .half_pie:before {
   content: '';
   display: block;
@@ -426,11 +305,9 @@ body {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
 
 /*color white #fff to fix the rendering problem*/
-/* line 366, sass.scss */
 .half_pie:after {
   content: '';
   display: block;
@@ -446,11 +323,9 @@ body {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
 
 /*the icon*/
-/* line 384, sass.scss */
 span.half_pie_icon {
   position: absolute;
   z-index: 5;
@@ -469,11 +344,9 @@ span.half_pie_icon {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
 
 /*ONE*/
-/* line 405, sass.scss */
 .half_part_pie_one {
   position: absolute;
   z-index: 1;
@@ -483,11 +356,9 @@ span.half_pie_icon {
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
-  clip: rect(0px 100px 200px 0px);
-}
+  clip: rect(0px 100px 200px 0px); }
 
 /*TWO*/
-/* line 417, sass.scss */
 .half_part_pie_two {
   position: absolute;
   z-index: 2;
@@ -498,11 +369,9 @@ span.half_pie_icon {
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
-  clip: rect(0px 100px 200px 0px);
-}
+  clip: rect(0px 100px 200px 0px); }
 
 /*THREE*/
-/* line 430, sass.scss */
 .half_part_pie_three {
   position: absolute;
   z-index: 3;
@@ -518,5 +387,4 @@ span.half_pie_icon {
   -moz-animation: half_third 4s linear;
   -o-animation: half_third 4s linear;
   animation: half_third 4s linear;
-  opacity: 0;
-}
+  opacity: 0; }
