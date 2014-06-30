@@ -1,5 +1,5 @@
 html {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color:black;
 }
 
@@ -118,7 +118,7 @@ body {
   
   @media all and (min-width: 700px) {
     overflow:hidden;
-    padding-right:350px;
+    padding-right:360px;
     
     .main {
       float:left;
@@ -136,7 +136,7 @@ body {
     .stats {
       float: right;
       width: 330px;
-      margin-right: -350px;
+      margin-right: -360px;
       margin-top: -7px;
       padding: 0 15px 5px;
     }
