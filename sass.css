@@ -81,7 +81,7 @@ body {
   @media all and (min-width: 700px) {
     .report-card {
       overflow: hidden;
-      padding-right: 360px; }
+      padding-right: 370px; }
       .report-card .main {
         float: left;
         width: 100%; }
@@ -91,8 +91,8 @@ body {
           margin: 15px 0; }
       .report-card .stats {
         float: right;
-        width: 330px;
-        margin-right: -360px;
+        width: 340px;
+        margin-right: -370px;
         margin-top: -7px;
         padding: 0 15px 5px; } }
 
