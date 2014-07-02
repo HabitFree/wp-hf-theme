@@ -77,6 +77,15 @@ body {
   padding:10px;
   background-color:#C5E0B1;
   color:green;
+  border-color: #48a34e;
+}
+
+.info {
+  @extend .card;
+  padding:10px;
+  background-color: #d7f1ff;
+  color: #2472ab;
+  border-color: #84bae6;
 }
 
 .report-card {
@@ -108,7 +117,7 @@ body {
   .stat {
     display:inline-block;
     text-align:center;
-    padding:0 20px;
+    padding:0 15px;
   }
   
   .number {

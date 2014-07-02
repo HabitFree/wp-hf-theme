@@ -47,7 +47,7 @@ body {
   float: right;
   margin-top: -38px; }
 
-.card, .success, .report-card {
+.card, .success, .info, .report-card {
   border: 1px solid lightgrey;
   border-radius: 4px;
   padding: 15px; }
@@ -55,7 +55,14 @@ body {
 .success {
   padding: 10px;
   background-color: #C5E0B1;
-  color: green; }
+  color: green;
+  border-color: #48a34e; }
+
+.info {
+  padding: 10px;
+  background-color: #d7f1ff;
+  color: #2472ab;
+  border-color: #84bae6; }
 
 .report-card {
   padding: 10px 15px; }
@@ -74,7 +81,7 @@ body {
   .report-card .stat {
     display: inline-block;
     text-align: center;
-    padding: 0 20px; }
+    padding: 0 15px; }
   .report-card .number {
     display: block;
     font-size: 30px; }
