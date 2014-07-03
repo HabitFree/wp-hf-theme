@@ -47,7 +47,7 @@ body {
   float: right;
   margin-top: -38px; }
 
-.card, .success, .info, .report-card {
+.card, .success, .info, .error, .report-card {
   border: 1px solid lightgrey;
   border-radius: 4px;
   padding: 15px; }
@@ -63,6 +63,12 @@ body {
   background-color: #d7f1ff;
   color: #2472ab;
   border-color: #84bae6; }
+
+.error {
+  padding: 10px;
+  background-color: #ffd5df;
+  color: #ab2d2e;
+  border-color: #e69ba0; }
 
 .report-card {
   padding: 10px 15px; }

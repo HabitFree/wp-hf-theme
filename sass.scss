@@ -88,6 +88,14 @@ body {
   border-color: #84bae6;
 }
 
+.error {
+  @extend .card;
+  padding:10px;
+  background-color: #ffd5df;
+  color: #ab2d2e;
+  border-color: #e69ba0;
+}
+
 .report-card {
   @extend .card;
   padding:10px 15px;
