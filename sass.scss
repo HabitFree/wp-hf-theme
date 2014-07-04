@@ -1,24 +1,33 @@
+$red1: #BA0000;
+$red2: #e69ba0;
+$red3: #ffd5df;
+
+$grey1:grey;
+$grey2:#dedede;
+$grey3:#f4f4f4;
+
 html {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-color:black;
+  background-color: $grey3;
 }
 
 body {
   margin:0;
-  color:grey;
+  color:$grey1;
 }
 
 #header {
   position:relative;
   text-align:center;
   padding:10px;
+  border-bottom:1px solid $grey2;
   
   a {
-    color:grey;
+    color:$grey1;
   }
   
   a:hover {
-    color:white;
+    color:black;
     text-decoration:none;
   }
   
@@ -45,7 +54,7 @@ body {
 
 #site-title {
   margin:0 auto;
-  display:table;
+  display:none;
   img {
     margin-left:-10px;
   }
@@ -67,7 +76,7 @@ body {
 }
 
 .card {
-  border:1px solid lightgrey;
+  border:1px solid $grey2;
   border-radius:4px;
   padding:15px;
 }
@@ -75,9 +84,9 @@ body {
 .success {
   @extend .card;
   padding:10px;
-  background-color:#C5E0B1;
+  background-color: #d0ecba;
   color:green;
-  border-color: #48a34e;
+  border-color: #a7d3a8;
 }
 
 .info {
@@ -88,12 +97,12 @@ body {
   border-color: #84bae6;
 }
 
-.error {
+.error, .fail {
   @extend .card;
   padding:10px;
-  background-color: #ffd5df;
-  color: #ab2d2e;
-  border-color: #e69ba0;
+  background-color: $red3;
+  color: $red1 !important;
+  border-color: $red2;
 }
 
 .report-card {
@@ -166,7 +175,7 @@ body {
 
 .meter {
   height:22px;
-  background-color:#EFEFEF;
+  background-color:$grey3;
   position:relative;
   white-space: nowrap;
   overflow:hidden;
@@ -180,7 +189,7 @@ body {
     z-index:10;
   }
   .progress {
-    background-color:#BA0000;
+    background-color:$red1;
     height:100%;
     display:block;
     overflow:hidden;
@@ -193,15 +202,9 @@ body {
 
 #footer {
   padding:20px;
+  border-top:1px solid $grey2;
   a {
-    color:grey;
-  }
-}
-
-.SimpleTest {
-  opacity:.5;
-  &:hover {
-    opacity:1;
+    color:$grey1;
   }
 }
 

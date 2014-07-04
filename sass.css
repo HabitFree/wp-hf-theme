@@ -1,6 +1,6 @@
 html {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-color: black; }
+  background-color: #f4f4f4; }
 
 body {
   margin: 0;
@@ -9,11 +9,12 @@ body {
 #header {
   position: relative;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  border-bottom: 1px solid #dedede; }
   #header a {
     color: grey; }
   #header a:hover {
-    color: white;
+    color: black;
     text-decoration: none; }
   #header .menu ul {
     padding: 0;
@@ -31,7 +32,7 @@ body {
 
 #site-title {
   margin: 0 auto;
-  display: table; }
+  display: none; }
   #site-title img {
     margin-left: -10px; }
 
@@ -47,16 +48,16 @@ body {
   float: right;
   margin-top: -38px; }
 
-.card, .success, .info, .error, .report-card {
-  border: 1px solid lightgrey;
+.card, .success, .info, .error, .fail, .report-card {
+  border: 1px solid #dedede;
   border-radius: 4px;
   padding: 15px; }
 
 .success {
   padding: 10px;
-  background-color: #C5E0B1;
+  background-color: #d0ecba;
   color: green;
-  border-color: #48a34e; }
+  border-color: #a7d3a8; }
 
 .info {
   padding: 10px;
@@ -64,10 +65,10 @@ body {
   color: #2472ab;
   border-color: #84bae6; }
 
-.error {
+.error, .fail {
   padding: 10px;
   background-color: #ffd5df;
-  color: #ab2d2e;
+  color: #ba0000 !important;
   border-color: #e69ba0; }
 
 .report-card {
@@ -114,7 +115,7 @@ body {
 
 .meter {
   height: 22px;
-  background-color: #EFEFEF;
+  background-color: #f4f4f4;
   position: relative;
   white-space: nowrap;
   overflow: hidden;
@@ -127,7 +128,7 @@ body {
     color: black;
     z-index: 10; }
   .meter .progress {
-    background-color: #BA0000;
+    background-color: #ba0000;
     height: 100%;
     display: block;
     overflow: hidden;
@@ -137,14 +138,10 @@ body {
     color: white; }
 
 #footer {
-  padding: 20px; }
+  padding: 20px;
+  border-top: 1px solid #dedede; }
   #footer a {
     color: grey; }
-
-.SimpleTest {
-  opacity: .5; }
-  .SimpleTest:hover {
-    opacity: 1; }
 
 .send-confirmation-email {
   display: none; }
