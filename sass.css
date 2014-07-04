@@ -31,10 +31,10 @@ body {
   padding: 10px; }
 
 #site-title {
-  margin: 0 auto;
-  display: none; }
+  margin: 0 auto; }
   #site-title img {
-    margin-left: -10px; }
+    margin-left: -10px;
+    max-width: 80%; }
 
 .hide {
   display: none; }

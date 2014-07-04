@@ -16,7 +16,7 @@
 			<section id="branding">
 				<h2 id="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'blankslate' ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/Lock-Gif-1-small.gif" />
+						<img src="<?php echo get_template_directory_uri(); ?>/img/Lock-2-small.png" />
 						<span class="hide"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></span>
 					</a>
 				</h2>
