@@ -98,7 +98,7 @@ body {
   border-color: #84bae6;
 }
 
-.error, .fail {
+.error, .fail, .setback {
   @extend .card;
   padding:10px;
   background-color: $red3;
@@ -120,11 +120,21 @@ body {
     margin: 15px auto 5px;
     
     .controls {
-      display:inline-block;
+        display: table;
+        margin: 25px auto 0px;
     }
     
     label {
-      padding: 0 0 0 10px;
+      padding: 5px 10px 7px 7px;
+
+      &.success {
+        border-radius: 4px 0 0 4px;
+      }
+
+      &.setback {
+        border-radius: 0 4px 4px 0;
+        margin-left:3px;
+      }
     }
   }
   
@@ -158,6 +168,10 @@ body {
       
       .report {
         margin:15px 0;
+
+        .controls {
+          margin:25px 0 0 0;
+        }
       }
     }
     
