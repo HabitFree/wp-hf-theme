@@ -6,8 +6,13 @@ $grey1:grey;
 $grey2:#dedede;
 $grey3:#f4f4f4;
 
-html {
+@mixin sans-serif() {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+html, .su-tabs-pane, .su-tabs-pane {
+  @include sans-serif();
+  font-size:16px !important;
   background-color: $grey3;
 }
 
@@ -46,10 +51,6 @@ body {
       height:100%;
     }
   }
-}
-
-.user-buttons {
-  padding:10px;
 }
 
 #site-title {
@@ -140,6 +141,7 @@ body {
   .number {
     display:block;
     font-size:30px;
+    @include sans-serif();
   }
   
   @media all and (min-width: 700px) {
@@ -210,4 +212,25 @@ body {
 
 .send-confirmation-email {
   display:none;
+}
+
+@font-face {
+  font-family: 'hfbody';
+  src: url('fonts/hfbody-roman-webfont.eot');
+  src: url('fonts/hfbody-roman-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/hfbody-roman-webfont.woff') format('woff'),
+  url('fonts/hfbody-roman-webfont.ttf') format('truetype'),
+  url('fonts/hfbody-roman-webfont.svg#crimson_textroman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src:url('fonts/Merriweather.ttf.woff') format('woff'),
+  url('fonts/Merriweather.ttf.svg#Merriweather') format('svg'),
+  url('fonts/Merriweather.ttf.eot'),
+  url('fonts/Merriweather.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
