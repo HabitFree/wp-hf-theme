@@ -46,7 +46,7 @@ body {
   float: right;
   margin-top: -38px; }
 
-.card, .success, .info, .error, .fail, .setback, .report-card {
+.card, .success, .info, .error, .fail, .setback, .quote, .report-card {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 15px; }
@@ -67,7 +67,13 @@ body {
   padding: 10px;
   background-color: #ffd5df;
   color: #ba0000 !important;
-  border-color: #e69ba0; }
+  border-color: #e6aeb6; }
+
+.quote {
+  padding: 10px;
+  background-color: #fff7b1;
+  color: #c28802;
+  border-color: #e6d8a8; }
 
 .report-card {
   padding: 10px 15px; }
@@ -146,12 +152,17 @@ body {
 
 #footer {
   padding: 20px;
-  border-top: 1px solid #dedede; }
+  border-top: 1px solid #dedede;
+  padding-right: 140px; }
   #footer a {
     color: grey; }
 
 .send-confirmation-email {
   display: none; }
+
+#un-button.un-bottom.css3 {
+  left: auto !important;
+  right: 20px; }
 
 @font-face {
   font-family: 'hfbody';
