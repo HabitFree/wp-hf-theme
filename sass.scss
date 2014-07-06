@@ -10,6 +10,8 @@ $gold1: #c28802;
 $gold2: #e6d8a8;
 $gold3: #fff7b1;
 
+$maxContentWidth: 850px;
+
 @mixin sans-serif() {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -25,7 +27,12 @@ body {
   color:$grey1;
 }
 
+#wrapper {
+  background-color:white;
+}
+
 #header {
+  background-color: $grey3;
   position:relative;
   text-align:center;
   padding:10px;
@@ -71,13 +78,17 @@ body {
 
 #container {
   padding:20px;
-  background-color:white;
   color:black;
-}
+  max-width:$maxContentWidth;
+  margin:0 auto;}
 
 .post-edit-link {
   float: right;
   margin-top: -38px;
+}
+
+a {
+  color:$red1;
 }
 
 .card {
@@ -229,11 +240,19 @@ body {
 }
 
 #footer {
+  background-color: $grey3;
   padding:20px;
   border-top:1px solid $grey2;
-  padding-right: 140px;
   a {
     color:$grey1;
+  }
+}
+
+#copyright {
+  max-width: $maxContentWidth;
+  margin: 0 auto;
+  @media all and (max-width: $maxContentWidth) {
+    padding-right:140px;
   }
 }
 

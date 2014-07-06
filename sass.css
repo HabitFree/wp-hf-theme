@@ -7,7 +7,11 @@ body {
   margin: 0;
   color: grey; }
 
+#wrapper {
+  background-color: white; }
+
 #header {
+  background-color: #f4f4f4;
   position: relative;
   text-align: center;
   padding: 10px;
@@ -39,12 +43,16 @@ body {
 
 #container {
   padding: 20px;
-  background-color: white;
-  color: black; }
+  color: black;
+  max-width: 850px;
+  margin: 0 auto; }
 
 .post-edit-link {
   float: right;
   margin-top: -38px; }
+
+a {
+  color: #ba0000; }
 
 .card, .success, .info, .error, .fail, .setback, .quote, .report-card {
   border: 1px solid #dedede;
@@ -151,11 +159,18 @@ body {
     color: white; }
 
 #footer {
+  background-color: #f4f4f4;
   padding: 20px;
-  border-top: 1px solid #dedede;
-  padding-right: 140px; }
+  border-top: 1px solid #dedede; }
   #footer a {
     color: grey; }
+
+#copyright {
+  max-width: 850px;
+  margin: 0 auto; }
+  @media all and (max-width: 850px) {
+    #copyright {
+      padding-right: 140px; } }
 
 .send-confirmation-email {
   display: none; }
