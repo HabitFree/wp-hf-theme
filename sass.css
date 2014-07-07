@@ -18,9 +18,6 @@ body {
   border-bottom: 1px solid #dedede; }
   #header a {
     color: grey; }
-  #header a:hover {
-    color: black;
-    text-decoration: none; }
   #header .menu ul {
     padding: 0;
     margin: 0; }
@@ -47,12 +44,19 @@ body {
   max-width: 850px;
   margin: 0 auto; }
 
+article {
+  padding: 0 0 20px 0;
+  margin: 0; }
+
 .post-edit-link {
   float: right;
   margin-top: -38px; }
 
 a {
   color: #ba0000; }
+
+a:hover {
+  text-decoration: none; }
 
 .card, .success, .info, .error, .fail, .setback, .quote, .report-card {
   border: 1px solid #dedede;

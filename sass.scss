@@ -1,14 +1,22 @@
-$red1: #BA0000;
+$red1: #ba0000;
 $red2: #e6aeb6;
 $red3: #ffd5df;
 
-$grey1:grey;
-$grey2:#dedede;
-$grey3:#f4f4f4;
+$grey1: grey;
+$grey2: #dedede;
+$grey3: #f4f4f4;
 
 $gold1: #c28802;
 $gold2: #e6d8a8;
 $gold3: #fff7b1;
+
+$green1: green;
+$green2: #a7d3a8;
+$green3: #d0ecba;
+
+$blue1: #2472ab;
+$blue2: #84bae6;
+$blue3: #d7f1ff;
 
 $maxContentWidth: 850px;
 
@@ -18,69 +26,70 @@ $maxContentWidth: 850px;
 
 html, .su-tabs-pane, .su-tabs-pane {
   @include sans-serif();
-  font-size:16px !important;
+  font-size: 16px !important;
   background-color: $grey3;
 }
 
 body {
-  margin:0;
-  color:$grey1;
+  margin: 0;
+  color: $grey1;
 }
 
 #wrapper {
-  background-color:white;
+  background-color: white;
 }
 
 #header {
   background-color: $grey3;
-  position:relative;
-  text-align:center;
-  padding:10px;
-  border-bottom:1px solid $grey2;
-  
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid $grey2;
+
   a {
-    color:$grey1;
+    color: $grey1;
   }
-  
-  a:hover {
-    color:black;
-    text-decoration:none;
-  }
-  
+
   .menu {
     ul {
-      padding:0;
-      margin:0;
+      padding: 0;
+      margin: 0;
     }
     li {
-      display:inline-block;
-      padding:10px;
+      display: inline-block;
+      padding: 10px;
     }
     a {
-      display:block;
-      width:100%;
-      height:100%;
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
 }
 
 #site-title {
-  margin:0 auto;
+  margin: 0 auto;
   img {
-    margin-left:-10px;
-    max-width:80%;
+    margin-left: -10px;
+    max-width: 80%;
   }
 }
 
 .hide {
-  display:none;
+  display: none;
 }
 
 #container {
-  padding:20px;
-  color:black;
-  max-width:$maxContentWidth;
-  margin:0 auto;}
+  padding: 20px;
+  color: black;
+  max-width: $maxContentWidth;
+  margin: 0 auto;
+}
+
+article {
+  padding:0 0 20px 0;
+  margin:0;
+}
 
 .post-edit-link {
   float: right;
@@ -88,34 +97,38 @@ body {
 }
 
 a {
-  color:$red1;
+  color: $red1;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .card {
-  border:1px solid $grey2;
-  border-radius:4px;
-  padding:15px;
+  border: 1px solid $grey2;
+  border-radius: 4px;
+  padding: 15px;
 }
 
 .success {
   @extend .card;
-  padding:10px;
-  background-color: #d0ecba;
-  color:green;
-  border-color: #a7d3a8;
+  padding: 10px;
+  background-color: $green3;
+  color: $green1;
+  border-color: $green2;
 }
 
 .info {
   @extend .card;
-  padding:10px;
-  background-color: #d7f1ff;
-  color: #2472ab;
-  border-color: #84bae6;
+  padding: 10px;
+  background-color: $blue3;
+  color: $blue1;
+  border-color: $blue2;
 }
 
 .error, .fail, .setback {
   @extend .card;
-  padding:10px;
+  padding: 10px;
   background-color: $red3;
   color: $red1 !important;
   border-color: $red2;
@@ -123,7 +136,7 @@ a {
 
 .quote {
   @extend .card;
-  padding:10px;
+  padding: 10px;
   background-color: $gold3;
   color: $gold1;
   border-color: $gold2;
@@ -131,22 +144,22 @@ a {
 
 .report-card {
   @extend .card;
-  padding:10px 15px;
-  
+  padding: 10px 15px;
+
   h2 {
-    margin:0;
-    text-align:center;
+    margin: 0;
+    text-align: center;
   }
-  
+
   .report {
     display: table;
     margin: 15px auto 5px;
-    
+
     .controls {
-        display: table;
-        margin: 25px auto 0px;
+      display: table;
+      margin: 25px auto 0px;
     }
-    
+
     label {
       padding: 5px 10px 7px 7px;
 
@@ -156,48 +169,48 @@ a {
 
       &.setback {
         border-radius: 0 4px 4px 0;
-        margin-left:3px;
+        margin-left: 3px;
       }
     }
   }
-  
+
   .stats {
-    text-align:center;
+    text-align: center;
   }
-  
+
   .stat {
-    display:inline-block;
-    text-align:center;
-    padding:0 15px;
+    display: inline-block;
+    text-align: center;
+    padding: 0 15px;
   }
-  
+
   .number {
-    display:block;
-    font-size:30px;
+    display: block;
+    font-size: 30px;
     @include sans-serif();
   }
-  
+
   @media all and (min-width: 700px) {
-    overflow:hidden;
-    padding-right:370px;
-    
+    overflow: hidden;
+    padding-right: 370px;
+
     .main {
-      float:left;
-      width:100%;
-      
+      float: left;
+      width: 100%;
+
       h2 {
-        text-align:left;
+        text-align: left;
       }
-      
+
       .report {
-        margin:15px 0;
+        margin: 15px 0;
 
         .controls {
-          margin:25px 0 0 0;
+          margin: 25px 0 0 0;
         }
       }
     }
-    
+
     .stats {
       float: right;
       width: 340px;
@@ -209,42 +222,42 @@ a {
 }
 
 .report-cards .submit {
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .meter {
-  height:22px;
-  background-color:$grey3;
-  position:relative;
+  height: 22px;
+  background-color: $grey3;
+  position: relative;
   white-space: nowrap;
-  overflow:hidden;
-  border-radius:4px;
-  clear:both;
+  overflow: hidden;
+  border-radius: 4px;
+  clear: both;
   .label {
-    position:absolute;
-    top:2px;
-    left:5px;
-    color:black;
-    z-index:10;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    color: black;
+    z-index: 10;
   }
   .progress {
-    background-color:$red1;
-    height:100%;
-    display:block;
-    overflow:hidden;
-    padding:2px 5px;
-    position:absolute;
-    z-index:50;
-    color:white;
+    background-color: $red1;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 2px 5px;
+    position: absolute;
+    z-index: 50;
+    color: white;
   }
 }
 
 #footer {
   background-color: $grey3;
-  padding:20px;
-  border-top:1px solid $grey2;
+  padding: 20px;
+  border-top: 1px solid $grey2;
   a {
-    color:$grey1;
+    color: $grey1;
   }
 }
 
@@ -252,36 +265,30 @@ a {
   max-width: $maxContentWidth;
   margin: 0 auto;
   @media all and (max-width: $maxContentWidth) {
-    padding-right:140px;
+    padding-right: 140px;
   }
 }
 
 .send-confirmation-email {
-  display:none;
+  display: none;
 }
 
 #un-button.un-bottom.css3 {
-  left:auto !important;
-  right:20px;
+  left: auto !important;
+  right: 20px;
 }
 
 @font-face {
   font-family: 'hfbody';
   src: url('fonts/hfbody-roman-webfont.eot');
-  src: url('fonts/hfbody-roman-webfont.eot?#iefix') format('embedded-opentype'),
-  url('fonts/hfbody-roman-webfont.woff') format('woff'),
-  url('fonts/hfbody-roman-webfont.ttf') format('truetype'),
-  url('fonts/hfbody-roman-webfont.svg#crimson_textroman') format('svg');
+  src: url('fonts/hfbody-roman-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/hfbody-roman-webfont.woff') format('woff'), url('fonts/hfbody-roman-webfont.ttf') format('truetype'), url('fonts/hfbody-roman-webfont.svg#crimson_textroman') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Merriweather';
-  src:url('fonts/Merriweather.ttf.woff') format('woff'),
-  url('fonts/Merriweather.ttf.svg#Merriweather') format('svg'),
-  url('fonts/Merriweather.ttf.eot'),
-  url('fonts/Merriweather.ttf.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/Merriweather.ttf.woff') format('woff'), url('fonts/Merriweather.ttf.svg#Merriweather') format('svg'), url('fonts/Merriweather.ttf.eot'), url('fonts/Merriweather.ttf.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
