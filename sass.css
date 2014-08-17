@@ -183,6 +183,9 @@ a:hover {
   left: auto !important;
   right: 20px; }
 
+.report-card label, input {
+  cursor: pointer; }
+
 @font-face {
   font-family: 'hfbody';
   src: url("fonts/hfbody-roman-webfont.eot");
