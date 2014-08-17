@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+    /* This php block here to prevent headers already sent error */
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
