@@ -61,7 +61,8 @@ a:hover {
 .card, .success, .info, .error, .fail, .setback, .quote, .report-card {
   border: 1px solid #dedede;
   border-radius: 4px;
-  padding: 15px; }
+  padding: 15px;
+  margin: 16px 0; }
 
 .success {
   padding: 10px;
