@@ -61,7 +61,8 @@ a:hover {
 .card, .success, .info, .error, .fail, .setback, .quote, .report-card {
   border: 1px solid #dedede;
   border-radius: 4px;
-  padding: 15px; }
+  padding: 15px;
+  margin: 16px 0; }
 
 .success {
   padding: 10px;
@@ -192,9 +193,10 @@ a:hover {
   src: url("fonts/hfbody-roman-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/hfbody-roman-webfont.woff") format("woff"), url("fonts/hfbody-roman-webfont.ttf") format("truetype"), url("fonts/hfbody-roman-webfont.svg#crimson_textroman") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Merriweather';
   src: url("fonts/Merriweather.ttf.woff") format("woff"), url("fonts/Merriweather.ttf.svg#Merriweather") format("svg"), url("fonts/Merriweather.ttf.eot"), url("fonts/Merriweather.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
+
+/*# sourceMappingURL=sass.css.map */
