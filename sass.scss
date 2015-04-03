@@ -146,6 +146,9 @@ a:hover {
 .report-card {
   @extend .card;
   padding: 10px 15px;
+  max-width:140px;
+  float:left;
+  margin:5px 10px 5px 0;
 
   h2 {
     margin: 0;
@@ -193,12 +196,8 @@ a:hover {
 
   @media all and (min-width: 700px) {
     overflow: hidden;
-    padding-right: 370px;
 
     .main {
-      float: left;
-      width: 100%;
-
       h2 {
         text-align: left;
       }
@@ -211,19 +210,15 @@ a:hover {
         }
       }
     }
-
-    .stats {
-      float: right;
-      width: 340px;
-      margin-right: -370px;
-      margin-top: -7px;
-      padding: 0 15px 5px;
-    }
   }
 }
 
 .report-cards .submit {
   margin-top: 20px;
+}
+
+.report-cards p {
+  clear:both;
 }
 
 .meter {
@@ -301,8 +296,7 @@ a:hover {
 // Donut CSS
 
 .donut {
-  position: relative;
-  float: left;
+  position:relative;
 }
 
 .donut h2 {
