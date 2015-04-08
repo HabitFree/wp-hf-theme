@@ -90,7 +90,7 @@ a:hover {
 
 .report-card {
   padding: 10px 15px;
-  max-width: 140px;
+  max-width: 160px;
   float: left;
   margin: 5px 10px 5px 0; }
   .report-card h2 {
@@ -119,6 +119,8 @@ a:hover {
     display: block;
     font-size: 30px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  .report-card .verb, .report-card .duration {
+    display: block; }
   @media all and (min-width: 700px) {
     .report-card {
       overflow: hidden; }
@@ -201,7 +203,8 @@ a:hover {
   text-align: center;
   position: absolute;
   margin-top: 27px;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
 
 .donut .top {
   display: block;

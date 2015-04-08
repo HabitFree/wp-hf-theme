@@ -146,7 +146,7 @@ a:hover {
 .report-card {
   @extend .card;
   padding: 10px 15px;
-  max-width:140px;
+  max-width:160px;
   float:left;
   margin:5px 10px 5px 0;
 
@@ -192,6 +192,10 @@ a:hover {
     display: block;
     font-size: 30px;
     @include sans-serif();
+  }
+
+  .verb,.duration {
+    display:block;
   }
 
   @media all and (min-width: 700px) {
@@ -304,6 +308,7 @@ a:hover {
   position: absolute;
   margin-top:27px;
   width: 100%;
+  z-index:1000;
 }
 
 .donut .top {
