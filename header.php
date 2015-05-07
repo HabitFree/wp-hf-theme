@@ -25,7 +25,8 @@
 			</section>
 			<nav id="menu" role="navigation">
 				<?php wp_nav_menu( array(
-					'theme_location' => 'main-menu'
+					'theme_location' => 'main-menu',
+					'depth' => 1
 				) ); ?>
 			</nav>
 		</header>

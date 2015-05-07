@@ -93,15 +93,10 @@ a:hover {
   max-width: 160px;
   float: left;
   margin: 5px 10px 5px 0; }
-  .report-card h2 {
-    margin: 0;
-    text-align: center; }
   .report-card .report {
-    display: table;
     margin: 15px auto 5px; }
     .report-card .report .controls {
-      display: table;
-      margin: 25px auto 0px; }
+      margin: 25px auto 15px; }
     .report-card .report label {
       padding: 5px 10px 7px 7px; }
       .report-card .report label.success {
@@ -111,14 +106,6 @@ a:hover {
         margin-left: 3px; }
   .report-card .stats {
     text-align: center; }
-  .report-card .stat {
-    display: inline-block;
-    text-align: center;
-    padding: 0 15px; }
-  .report-card .number {
-    display: block;
-    font-size: 30px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   .report-card .verb, .report-card .duration {
     display: block; }
   @media all and (min-width: 700px) {
