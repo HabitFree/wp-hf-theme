@@ -108,6 +108,8 @@ a:hover {
     border-collapse: collapse;
     width: 100%;
     text-align: left; }
+  .report-card h4 {
+    margin: 0; }
   .report-card .stats {
     text-align: center; }
   .report-card .verb, .report-card .duration {
