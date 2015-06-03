@@ -181,6 +181,15 @@ a:hover {
     margin:0;
   }
 
+  .rank {
+    opacity:.3;
+    padding-left:10px;
+  }
+
+  .current .rank {
+    opacity:.5;
+  }
+
   .stats {
     text-align: center;
   }

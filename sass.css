@@ -110,6 +110,11 @@ a:hover {
     text-align: left; }
   .report-card h4 {
     margin: 0; }
+  .report-card .rank {
+    opacity: .3;
+    padding-left: 10px; }
+  .report-card .current .rank {
+    opacity: .5; }
   .report-card .stats {
     text-align: center; }
   .report-card .verb, .report-card .duration {
