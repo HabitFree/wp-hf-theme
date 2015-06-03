@@ -58,13 +58,13 @@ a {
 a:hover {
   text-decoration: none; }
 
-.card, .success, .info, .error, .fail, .setback, .quote, .report-card {
+.card, .success, .current, .info, .error, .fail, .setback, .quote, .report-card {
   border: 1px solid #dedede;
   border-radius: 4px;
   padding: 15px;
   margin: 16px 0; }
 
-.success {
+.success, .current {
   padding: 10px;
   background-color: #d0ecba;
   color: green;
@@ -104,6 +104,10 @@ a:hover {
       .report-card .report label.setback {
         border-radius: 0 4px 4px 0;
         margin-left: 3px; }
+  .report-card table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left; }
   .report-card .stats {
     text-align: center; }
   .report-card .verb, .report-card .duration {

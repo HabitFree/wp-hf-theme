@@ -111,7 +111,7 @@ a:hover {
   margin: 16px 0;
 }
 
-.success {
+.success, .current {
   @extend .card;
   padding: 10px;
   background-color: $green3;
@@ -169,6 +169,12 @@ a:hover {
         margin-left: 3px;
       }
     }
+  }
+
+  table {
+    border-collapse:collapse;
+    width:100%;
+    text-align:left;
   }
 
   .stats {
