@@ -90,7 +90,7 @@ a:hover {
 
 .report-card {
   padding: 10px 15px;
-  max-width: 160px;
+  max-width: 350px;
   float: left;
   margin: 5px 10px 5px 0; }
   .report-card .report {
@@ -115,8 +115,13 @@ a:hover {
     padding-left: 10px; }
   .report-card .current .rank {
     opacity: .5; }
-  .report-card .stats {
-    text-align: center; }
+  .report-card .streaks {
+    float: right;
+    padding-left: 15px;
+    border-left: 1px solid lightgray;
+    margin: 15px 0 0 15px; }
+  .report-card .report {
+    float: left; }
   .report-card .verb, .report-card .duration {
     display: block; }
   @media all and (min-width: 700px) {
