@@ -146,7 +146,7 @@ a:hover {
 .report-card {
   @extend .card;
   padding: 10px 15px;
-  max-width:350px;
+  max-width:300px;
   float:left;
   margin:5px 10px 5px 0;
 
@@ -192,9 +192,9 @@ a:hover {
 
   .streaks {
     float: right;
-    padding-left:15px;
-    border-left: 1px solid lightgray;
-    margin: 15px 0 0 15px;
+    padding: 0 0 7px 15px;
+    border-left: 1px solid #D3D3D3;
+    margin: 13px 0 0 15px;
   }
 
   .report {
@@ -205,27 +205,31 @@ a:hover {
     display:block;
   }
 
-  @media all and (min-width: 700px) {
-    overflow: hidden;
+  @media all and (max-width: 720px) {
+    margin:10px auto;
+    float:none;
+    overflow:hidden;
+  }
 
-    .main {
-      h2 {
-        text-align: left;
-      }
-
-      .report {
-        margin: 15px 0;
-
-        .controls {
-          margin: 25px 0 0 0;
-        }
-      }
+  @media all and (max-width: 375px) {
+    .streaks, .report {
+      float:none;
+      padding:0;
+      margin:0;
+      border:none;
+    }
+    .report {
+      margin-top:20px;
     }
   }
 }
 
 .report-cards .submit {
   margin-top: 20px;
+  @media all and (max-width: 720px) {
+    margin:20px auto;
+    display:block;
+  }
 }
 
 .report-cards p {

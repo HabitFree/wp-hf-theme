@@ -90,7 +90,7 @@ a:hover {
 
 .report-card {
   padding: 10px 15px;
-  max-width: 350px;
+  max-width: 300px;
   float: left;
   margin: 5px 10px 5px 0; }
   .report-card .report {
@@ -117,25 +117,33 @@ a:hover {
     opacity: .5; }
   .report-card .streaks {
     float: right;
-    padding-left: 15px;
-    border-left: 1px solid lightgray;
-    margin: 15px 0 0 15px; }
+    padding: 0 0 7px 15px;
+    border-left: 1px solid #D3D3D3;
+    margin: 13px 0 0 15px; }
   .report-card .report {
     float: left; }
   .report-card .verb, .report-card .duration {
     display: block; }
-  @media all and (min-width: 700px) {
+  @media all and (max-width: 720px) {
     .report-card {
-      overflow: hidden; }
-      .report-card .main h2 {
-        text-align: left; }
-      .report-card .main .report {
-        margin: 15px 0; }
-        .report-card .main .report .controls {
-          margin: 25px 0 0 0; } }
+      margin: 10px auto;
+      float: none;
+      overflow: hidden; } }
+  @media all and (max-width: 375px) {
+    .report-card .streaks, .report-card .report {
+      float: none;
+      padding: 0;
+      margin: 0;
+      border: none; }
+    .report-card .report {
+      margin-top: 20px; } }
 
 .report-cards .submit {
   margin-top: 20px; }
+  @media all and (max-width: 720px) {
+    .report-cards .submit {
+      margin: 20px auto;
+      display: block; } }
 
 .report-cards p {
   clear: both; }
