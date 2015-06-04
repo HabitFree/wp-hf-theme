@@ -152,7 +152,7 @@ a:hover {
 
   .report {
     margin: 15px auto 5px;
-    max-width:153px;
+    width:153px;
 
     .controls {
       margin: 25px auto 15px;
@@ -221,7 +221,7 @@ a:hover {
     }
     .report {
       margin-top:20px;
-      max-width:100%;
+      width:auto;
     }
   }
 }
