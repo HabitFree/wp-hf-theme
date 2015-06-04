@@ -94,7 +94,8 @@ a:hover {
   float: left;
   margin: 5px 10px 5px 0; }
   .report-card .report {
-    margin: 15px auto 5px; }
+    margin: 15px auto 5px;
+    max-width: 153px; }
     .report-card .report .controls {
       margin: 25px auto 15px; }
     .report-card .report label {
@@ -136,7 +137,8 @@ a:hover {
       margin: 0;
       border: none; }
     .report-card .report {
-      margin-top: 20px; } }
+      margin-top: 20px;
+      max-width: 100%; } }
 
 .report-cards .submit {
   margin-top: 20px; }
