@@ -98,14 +98,11 @@ a:hover {
 .card-wrapper {
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
 }
 
 .report-card {
     padding: 10px 15px;
     margin: 5px 10px 5px 0;
-    display:flex;
-    flex-wrap:wrap;
 }
 .report-card .report {
     margin: 15px auto 5px;
@@ -119,10 +116,6 @@ a:hover {
 .report-card .report label.setback {
     border-radius: 0 4px 4px 0;
     margin-left: 3px; }
-.report-card table {
-    border-collapse: collapse;
-    width: 100%;
-    text-align: left; }
 .report-card h4 {
     margin: 0; }
 .report-card .rank {
@@ -131,9 +124,8 @@ a:hover {
 .report-card .current .rank {
     opacity: .5; }
 .report-card .stats {
-    border-right: 1px solid #D3D3D3;
-    margin-right:15px;
-    padding-right:15px;
+    border-bottom: 1px solid #D3D3D3;
+    padding-bottom:15px;
 }
 .report-card .guage {
     display: table;
