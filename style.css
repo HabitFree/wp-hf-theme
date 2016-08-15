@@ -95,11 +95,17 @@ a:hover {
     color: #c28802;
     border-color: #e6d8a8; }
 
+.card-wrapper {
+    display:flex;
+    flex-wrap:wrap;
+}
+
 .report-card {
     padding: 10px 15px;
-    max-width: 304px;
-    float: left;
-    margin: 5px 10px 5px 0; }
+    margin: 5px 10px 5px 0;
+    display:flex;
+    flex-wrap:wrap;
+}
 .report-card .report {
     margin: 15px auto 5px;
     width: 153px; }
@@ -123,11 +129,23 @@ a:hover {
     padding-left: 10px; }
 .report-card .current .rank {
     opacity: .5; }
+.report-card .stats {
+    border-right: 1px solid #D3D3D3;
+    margin-right:15px;
+    padding-right:15px;
+}
 .report-card .streaks {
-    float: right;
-    padding: 0 0 7px 15px;
-    border-left: 1px solid #D3D3D3;
-    margin: 13px 0 0 15px; }
+    display:flex;
+    justify-content:space-between;
+}
+.report-card .stat {
+    text-align:center;
+}
+.report-card .stat .number {
+    display:block;
+    font-size:30px;
+    font-weight:bold;
+}
 .report-card .report {
     float: left; }
 .report-card .verb, .report-card .duration {
