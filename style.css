@@ -98,6 +98,7 @@ a:hover {
 .card-wrapper {
     display:flex;
     flex-wrap:wrap;
+    justify-content:center;
 }
 
 .report-card {
@@ -155,27 +156,9 @@ a:hover {
     float: left; }
 .report-card .verb, .report-card .duration {
     display: block; }
-@media all and (max-width: 720px) {
-    .report-card {
-        margin: 10px auto;
-        float: none;
-        overflow: hidden; } }
-@media all and (max-width: 375px) {
-    .report-card .streaks, .report-card .report {
-        float: none;
-        padding: 0;
-        margin: 0;
-        border: none; }
-    .report-card .report {
-        margin-top: 20px;
-        width: auto; } }
 
 .report-cards .submit {
     margin-top: 20px; }
-@media all and (max-width: 720px) {
-    .report-cards .submit {
-        margin: 20px auto;
-        display: block; } }
 
 .report-cards p {
     clear: both; }
